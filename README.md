@@ -1,8 +1,6 @@
 # Brew & Bloom — Café Management Platform
 
-A full-stack café website and management dashboard built with **Laravel**, **React**, and **Tailwind CSS**. The project includes a public-facing café experience alongside tools for managing products, orders, reservations, coupons, rewards, and site content.
-
-> **Before publishing:** review the license and provenance of every dependency and source file you use. This repository does not include a project-specific license file; do not assume that code without a clear license is automatically reusable. Add a license only when you have the right to do so.
+A full-stack café website and management dashboard built with **Laravel**, **React**, and **Tailwind CSS**. The project includes a public-facing café experience alongside tools for managing products, orders, reservations, coupons, rewards, and site content
 
 ## Highlights
 
@@ -15,6 +13,8 @@ A full-stack café website and management dashboard built with **Laravel**, **Re
 - Editable site content and seed data
 - Laravel API with Sanctum authentication
 - React single-page application with Vite, Tailwind CSS, Framer Motion, and Lucide icons
+
+![Brew & Bloom Café Platform Blueprint](<Brew & Bloom Café Platform Blueprint.png>)
 
 ## Technology
 
@@ -100,15 +100,13 @@ The database seeder creates local demonstration accounts:
 
 ## Branding and customization
 
-- **Brand and contact information:** edit `frontend/src/config/site.js`.
-- **Display currency:** set `VITE_CURRENCY` in `frontend/.env` to a three-letter ISO currency code (for example `USD`, `EUR`, or `MAD`); the default is `USD`.
-- **Browser title and metadata:** edit `frontend/index.html`.
-- **Colors and typography:** edit the theme tokens in `frontend/src/index.css`.
-- **Products, categories, and demo accounts:** edit the seeders under `backend/database/seeders/`.
-- **Business rules:** review the services and API controllers under `backend/app/`.
-- **Backend configuration:** use `backend/.env`; do not commit local environment files or secrets.
-
-Replace placeholder address and phone details in the site configuration before presenting the site as a real business. Review the seeded copy and imagery and ensure you have permission to use all assets before deployment.
+- **Brand and contact information:** edit `frontend/src/config/site.js`
+- **Display currency:** set `VITE_CURRENCY` in `frontend/.env` to a three-letter ISO currency code (for example `USD`, `EUR`, or `MAD`); the default is `USD`
+- **Browser title and metadata:** edit `frontend/index.html`
+- **Colors and typography:** edit the theme tokens in `frontend/src/index.css`
+- **Products, categories, and demo accounts:** edit the seeders under `backend/database/seeders/`
+- **Business rules:** review the services and API controllers under `backend/app/`
+- **Backend configuration:** use `backend/.env`; do not commit local environment files or secrets
 
 ## Useful commands
 
@@ -128,16 +126,3 @@ cd backend
 php artisan test
 php artisan route:list
 ```
-
-## Security checklist
-
-- Keep `.env` files and credentials out of version control.
-- Replace demo passwords and remove demo users before deployment.
-- Set `APP_DEBUG=false` in production.
-- Configure `APP_URL`, database credentials, CORS, and allowed frontend origins for your deployment.
-- Use HTTPS in production and review authentication, authorization, validation, and rate limiting.
-- Confirm asset licenses and add appropriate notices before publishing.
-
-## Project status
-
-This repository is a starter foundation. Run the frontend build and backend test suite in your environment before deployment; environment-specific configuration and integration testing may still be required.
